@@ -1,0 +1,71 @@
+{
+    "FileMeta": {
+		"prefix": "filemeta",
+		"body": [
+			"(filemeta",
+			"    (title \"$0\")",
+			")"
+		],
+		"description": "Booklisp: Filmeta header"
+	},
+
+	"Title": {
+		"prefix": "title",
+		"body": [
+			"(title \"$0\")"
+		],
+		"description": "Booklisp: Title function"
+	},
+
+	"Subtitle": {
+		"prefix": "subtitle",
+		"body": [
+			"(subtitle \"$0\")"
+		],
+		"description": "Booklisp: Subtitle function"
+	},
+
+	"Authors": {
+		"prefix": "authors",
+		"body": [
+			"(authors [\"$1\"$0])"
+		],
+		"description": "Booklisp: Authors function"
+	},
+
+	"Table of Contents": {
+		"prefix": "table-of-contents",
+		"body": [
+			"(table-of-contents",
+			"    $0",
+			")"
+		],
+		"description": "Booklisp: Table of contents"
+	},
+
+	"Table Of Contents Entry": {
+		"prefix": "entry",
+		"body": [
+			"(${1|chapter,section-main,section|} \"$2\")"
+		],
+		"description": "Booklisp: Table of Contents Entry"
+	},
+
+	"Section": {
+		"prefix": "section",
+		"body": [
+			"(${1|section,subsection,subsection-minor|}, \"$2\")"
+		],
+		"description": "Booklisp: Section Inclusion"
+	},
+
+	"Booklisp Block": {
+		"prefix": "bl",
+		"body": [
+			"<!--bl",
+			"$0",
+			"/bl-->"
+		],
+		"description": "Booklisp: executable block"
+	}
+}
